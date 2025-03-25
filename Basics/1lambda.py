@@ -29,3 +29,9 @@ print(sorted_data)
 Lambda functions are particularly useful in situations where you need a short, 
 throwaway function for a specific operation
 '''
+
+# lambda with multiple criteria for sorting
+
+my_list = ["Chennai", "Hyderabad", "Delhi", "Agra", "Bengaluru", "Fura", "Fira", "Fane"]
+count_list = sorted (my_list , key = lambda x : (len(x), x[0], x[1]))
+print(count_list)
